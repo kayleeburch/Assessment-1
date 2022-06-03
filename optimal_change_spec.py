@@ -5,4 +5,4 @@ print("2:", optimal_change(31.51, 50) == "The optimal change for an item that co
 print("3:", optimal_change(89.55, 100) == "The optimal change for an item that costs $89.55 with an amount paid of $100 is 1 $10 bill, 1 quarter, and 2 dimes.")
 print("4:", optimal_change(2.00, 400) == "The optimal change for an item that costs $2.0 with an amount paid of $400 is 3 $100 bills, 1 $50 bill, 2 $20 bills, 1 $5 bill, and 3 $1 bills.")
 print("5:", optimal_change(60.00, 60.00) == "The optimal change for an item that costs $60.0 with an amount paid of $60.0 is no change.")
-print("6:", optimal_change(59.99, 60.0) == "The optimal change for an item that costs $59.99 with an amount paid of $60.0 is 1 penny.")# Write your tests here!
+print("6:", optimal_change(59.99, 60.0) == "The optimal change for an item that costs $59.99 with an amount paid of $60.0 is 1 penny.")
