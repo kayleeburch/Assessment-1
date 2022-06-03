@@ -6,3 +6,4 @@ print("3:", optimal_change(89.55, 100) == "The optimal change for an item that c
 print("4:", optimal_change(2.00, 400) == "The optimal change for an item that costs $2.0 with an amount paid of $400 is 3 $100 bills, 1 $50 bill, 2 $20 bills, 1 $5 bill, and 3 $1 bills.")
 print("5:", optimal_change(60.00, 60.00) == "The optimal change for an item that costs $60.0 with an amount paid of $60.0 is no change.")
 print("6:", optimal_change(59.99, 60.0) == "The optimal change for an item that costs $59.99 with an amount paid of $60.0 is 1 penny.")
+print("7:", optimal_change(70.57, 60) == "The optimal change for an item that costs $70.57 with an amount paid of $60 is not enough to pay for item. Customer still owes $10.57.")

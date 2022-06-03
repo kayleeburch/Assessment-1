@@ -1,9 +1,13 @@
 def optimal_change(item_cost, amount_paid):
-    
+
     dollars = {'$100': 100, '$50': 50, '$20': 20, '$10': 10, '$5': 5, '$1': 1} #dollars will hold dollar amount as string (key) and int value (value)
     cents = {'quarter' : .25, 'dime': .10, 'nickle': .05, 'penny': .01} #cents will hold cent amount as string (key) and int value (value)
 
     optimal_change = amount_paid - item_cost #optimal_change will hold ideal change to give back
+    
+    if optimal_change < 0: #to check for cases of under payment
+        return f"The optimal change for an item that costs ${item_cost} with an amount paid of ${amount_paid} is not enough to pay for item. Customer still owes ${abs(round(optimal_change, 2))}."
+    
     optimal_dollar = optimal_change // 1 #using floor to just get dollar amount
     optimal_cents = round(optimal_change - optimal_dollar, 2) #subtracting total change from dollar amount to get change and then using round to the 2nd place to only return .00 from decimal
     
